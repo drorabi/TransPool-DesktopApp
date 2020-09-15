@@ -1,0 +1,11 @@
+.one {
+    -fx-background-color: rgba(220,220,220,0.7);
+}
+.label{
+    -fx-font-size: 18px;
+    -fx-text-fill: black;
+}
+
+#title{
+    -fx-font-size: 24px;
+}

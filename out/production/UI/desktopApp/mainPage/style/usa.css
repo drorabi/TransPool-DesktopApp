@@ -1,0 +1,65 @@
+.button {
+    -fx-text-fill: black;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(gray, gray);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(lightgray, lightgray);
+}
+
+#mainScrollPane{
+    -fx-background-image: url(usa.jpg);
+}
+
+.label{
+    -fx-text-fill: #e7a808;
+    -fx-font-weight: bold;
+    -fx-font-size: 22px;
+}
+
+.radio-button{
+    -fx-text-fill: #e7a808;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.tooltip{
+    -fx-background-color: yellow;
+    -fx-text-fill: black;
+
+}
+
+#error{
+    -fx-background-color: lightgrey;
+    -fx-text-fill:  red;
+}
+
+#success{
+    -fx-background-color: lightgrey;
+    -fx-text-fill: green;
+}
+
+.toggle-button {
+    -fx-text-fill: black;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(gray, gray);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 5, 0.0 , 0 , 1 );
+}
+
+.toggle-button:selected {
+    -fx-background-color: linear-gradient(lightgray, lightgray);
+}
+
+#background{
+    -fx-background-image: url(usa.jpg);
+}
+
+#welcomeText{
+    -fx-font-size: 50px;
+    -fx-font-family: "Baskerville Old Face";
+}
+

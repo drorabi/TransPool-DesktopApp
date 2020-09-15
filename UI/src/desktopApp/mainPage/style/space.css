@@ -1,0 +1,72 @@
+.button {
+    -fx-text-fill: black;
+    -fx-font-family: "Gill Sans Ultra Bold Condensed";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(greenyellow, greenyellow);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 5, 0.0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(lightgreen, lightgreen);
+}
+
+#mainScrollPane{
+    -fx-background-image: url(milkyway.jpg);
+}
+
+.label{
+    -fx-text-fill: #ff5ddb;
+    -fx-font-weight: bold;
+    -fx-font-size: 22px;
+    -fx-font-family: "Gill Sans Ultra Bold Condensed";
+
+}
+
+.radio-button{
+    -fx-text-fill:  #ff5ddb;
+    -fx-font-weight: bold;
+    -fx-font-size: 17px;
+    -fx-font-family: "Gill Sans Ultra Bold Condensed";
+}
+
+#error{
+    -fx-background-color: lightgrey;
+    -fx-text-fill:  red;
+    -fx-font-family: "Gill Sans Ultra Bold Condensed";
+
+}
+
+.tooltip{
+    -fx-background-color:  #3ef13e;;
+    -fx-text-fill: black;
+
+}
+
+#success{
+    -fx-background-color: lightgrey;
+    -fx-text-fill: green;
+    -fx-font-family: "Gill Sans Ultra Bold Condensed";
+
+}
+
+.toggle-button {
+    -fx-text-fill: black;
+    -fx-font-family: "Gill Sans Ultra Bold Condensed";
+    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(greenyellow, greenyellow);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 5, 0.0 , 0 , 1 );
+
+}
+
+.toggle-button:selected {
+    -fx-background-color: linear-gradient(lightgreen, lightgreen);
+}
+
+#background{
+    -fx-background-image: url(milkyway.jpg);
+}
+
+#welcomeText{
+    -fx-font-size: 72px;
+    -fx-font-family: "Gill Sans MT Ext Condensed Bold";
+}

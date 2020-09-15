@@ -1,0 +1,20 @@
+.washington {
+   -fx-background-image: url(washingthonBG.jpg);
+}
+#washingtonBG{
+    -fx-background-image: url(washingthonBG.jpg);
+}
+
+.sinai {
+    -fx-background-image: url(sinaiBG.jpg);
+}
+#sinaiBG{
+    -fx-background-image: url(sinaiBG.jpg);
+}
+
+.space {
+    -fx-background-image: url(spaceBG.jpg);
+}
+#spaceBG{
+    -fx-background-image: url(spaceBG.jpg);
+}

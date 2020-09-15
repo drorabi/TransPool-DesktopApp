@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="682.0" stylesheets="@ReviewStyle/reviewCss.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopApp.driverReview.driverReviewController">
+   <children>
+      <GridPane layoutX="-5.0" layoutY="-8.0" prefHeight="541.0" prefWidth="689.0" styleClass="one">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="0.0" prefWidth="45.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="459.0" minWidth="10.0" prefWidth="332.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="458.0" minWidth="10.0" prefWidth="281.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.0" minWidth="0.0" prefWidth="37.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="383.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="511.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="385.0" minHeight="0.0" prefHeight="58.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="411.0" minHeight="10.0" prefHeight="213.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="385.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label id="title" text="Review Your Driver" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets top="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Baskerville Old Face" size="28.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="27.0" prefWidth="328.0" text="Choose Your Request Serial Number:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="requestCB" onAction="#requestCBOnAction" prefHeight="31.0" prefWidth="124.0" promptText="--select--" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="21.0" prefWidth="300.0" text="Choose Your Driver Serial Number:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <ComboBox fx:id="tripsCB" onAction="#tripsCBOnAction" prefHeight="31.0" prefWidth="124.0" promptText="--select--" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <ImageView fx:id="fourStarButton" fitHeight="43.0" fitWidth="43.0" onMouseClicked="#fourStarOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../Resources/star.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="threeStarButton" fitHeight="43.0" fitWidth="43.0" onMouseClicked="#threeStarOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../Resources/star.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="twoStarButton" fitHeight="43.0" fitWidth="43.0" onMouseClicked="#twoStarOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../Resources/star.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets right="45.0" top="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="oneStarButton" fitHeight="43.0" fitWidth="43.0" onMouseClicked="#oneStarOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <GridPane.margin>
+                  <Insets right="90.0" top="10.0" />
+               </GridPane.margin>
+               <image>
+                  <Image url="@../Resources/star.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="fiveStartButton" fitHeight="43.0" fitWidth="43.0" onMouseClicked="#fiveStarOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP">
+               <image>
+                  <Image url="@../Resources/star.jpg" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="45.0" top="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label text="Write Your Feedback" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" top="10.0" />
+               </GridPane.margin>
+            </Label>
+            <TextArea fx:id="feedbackTA" prefHeight="212.0" prefWidth="593.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+            <Button fx:id="submitButton" mnemonicParsing="false" onAction="#submitOnAction" text="submit" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <Label id="num" fx:id="rankLabel" text="1" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="fourBlackStar" fitHeight="43.0" fitWidth="43.0" onMouseClicked="#fourStarOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin>
+               <image>
+                  <Image url="@../Resources/black_star.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="fiveBlackStar" fitHeight="43.0" fitWidth="43.0" onMouseClicked="#fiveStarOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/black_star.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets left="45.0" top="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="threeBlackStar" fitHeight="43.0" fitWidth="43.0" onMouseClicked="#threeStarOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/black_star.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="oneBlackStar" fitHeight="43.0" fitWidth="43.0" onMouseClicked="#oneStarOnAction" pickOnBounds="true" preserveRatio="true" styleClass="one" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/black_star.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets right="90.0" top="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="twoBlackStar" fitHeight="43.0" fitWidth="43.0" onMouseClicked="#twoStarOnAction" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../Resources/black_star.png" />
+               </image>
+               <GridPane.margin>
+                  <Insets right="45.0" top="10.0" />
+               </GridPane.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

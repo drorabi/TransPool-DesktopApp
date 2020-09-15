@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="806.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopApp.liveMap.timeToolBar.timeToolBarController">
+   <children>
+      <GridPane prefHeight="100.0" prefWidth="766.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="10.0" prefWidth="117.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.0" minWidth="10.0" prefWidth="119.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="466.0" minWidth="10.0" prefWidth="39.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="442.0" minWidth="0.0" prefWidth="442.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="60.0" minHeight="8.0" prefHeight="24.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="21.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="dateLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="331.0" text="Label" textFill="#e7a808" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Button fx:id="forwardButton" mnemonicParsing="false" onAction="#forwardOnAction" prefWidth="95.0" text="Forward" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <Button fx:id="backwardButton" mnemonicParsing="false" onAction="#backwardOnAction" prefWidth="95.0" text="Backward" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <ToggleButton fx:id="fiveMinutesButton" mnemonicParsing="false" onAction="#fiveMinutesOnAction" prefWidth="90.0" text="5 minutes">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="halfAnHourButton" mnemonicParsing="false" onAction="#halfAnHourOnAction" prefHeight="25.0" prefWidth="96.0" text="30 minutes">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="oneHourButton" mnemonicParsing="false" onAction="#oneHourOnAction" prefWidth="90.0" text="1 hour">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="twoHoursButton" mnemonicParsing="false" onAction="#twoHoursOnAction" prefWidth="90.0" text="2 hours">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </ToggleButton>
+                  <ToggleButton fx:id="dayButton" mnemonicParsing="false" onAction="#dayOnAction" prefHeight="25.0" prefWidth="90.0" text="24 hours">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </ToggleButton>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

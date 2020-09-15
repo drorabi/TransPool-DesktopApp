@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktopApp.liveMap.liveMapController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="10.0" prefWidth="16.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="724.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="11.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="550.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="115.0" minHeight="115.0" prefHeight="115.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <children>
+            <fx:include fx:id="timeToolBarComponent" source="timeToolBar/timeToolBar.fxml" />
+         </children>
+      </AnchorPane>
+      <ScrollPane fx:id="scrollPaneComponent" prefHeight="587.0" prefWidth="726.0" styleClass="washington" GridPane.columnIndex="1">
+         <content>
+            <AnchorPane fx:id="mapAnchorPane" prefHeight="863.0" prefWidth="1317.0" styleClass="washington" />
+         </content>
+      </ScrollPane>
+   </children>
+   <stylesheets>
+      <URL value="@roads/RoadStyle.css" />
+      <URL value="@mapStyle/liveMap.css" />
+   </stylesheets>
+</GridPane>

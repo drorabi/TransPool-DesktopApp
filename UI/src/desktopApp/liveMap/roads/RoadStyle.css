@@ -1,0 +1,17 @@
+.line1 {
+    -fx-stroke: yellow;
+    -fx-stroke-width: 8px;
+}
+
+.line2 {
+    -fx-stroke-width: 14px;
+    -fx-stroke: black;
+
+}
+
+.line3 {
+    -fx-stroke: #3ef13e;
+    -fx-stroke-width: 8px;
+}
+
+
